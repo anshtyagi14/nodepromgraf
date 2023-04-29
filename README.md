@@ -45,11 +45,13 @@ Paste the following content into the file
 Description=Node Exporter
 Wants=network-online.target
 After=network-online.target
+
 [Service]
 User=node_exporter
 Group=node_exporter
 Type=simple
 ExecStart=/usr/local/bin/node_exporter
+
 [Install]
 WantedBy=multi-user.target
 ```
@@ -107,9 +109,9 @@ $ sudo vim /etc/prometheus/prometheus.yml
 Add the following content under the scrape_configs section
 
 ```yml
-- job_name: "node_exporter"
-static_configs:
-- targets: ["localhost:9100"]
+  - job_name: "node_exporter"
+    static_configs:
+      - targets: ["localhost:9100"]
 ```
 
 Create a new systemd service file for Prometheus
@@ -124,15 +126,17 @@ Paste the following content into the file
 [Unit]
 Description=Prometheus
 After=network.target
+
 [Service]
 User=prometheus
 Group=prometheus
 Type=simple
 ExecStart=/usr/local/bin/prometheus \
---config.file /etc/prometheus/prometheus.yml \
---storage.tsdb.path /var/lib/prometheus/ \
---web.console.templates=/etc/prometheus/consoles \
---web.console.libraries=/etc/prometheus/console_libraries
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
 [Install]
 WantedBy=multi-user.target
 ```
