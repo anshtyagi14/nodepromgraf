@@ -175,7 +175,7 @@ $ systemctl status grafana-server
 
 ### Step 5: Configure Grafana to visualize system logs
 
-1. Open Grafana in your browser at http://<your-server-ip>:3000 and log in with the default credentials (username: admin, password: admin).
+1. Open Grafana in your browser at http://your-server-ip:3000 and log in with the default credentials (username: admin, password: admin).
 2. Click on the Configuration (gear icon) in the left sidebar, then Data sources, and click Add Data source.
 3. Select Prometheus as the data source.
 4. Under HTTP, set the URL to http://localhost:9090.
