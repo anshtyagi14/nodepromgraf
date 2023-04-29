@@ -1,4 +1,4 @@
-# Installing and Setting Up Node Exporter, Prometheus, and Grafana for System Log Visualization
+# Installing and setting up Node Exporter, Prometheus, and Grafana for system log visualization
 
 This guide will help you install and set up Node Exporter, Prometheus, and Grafana to visualize system logs on Grafana.
 
