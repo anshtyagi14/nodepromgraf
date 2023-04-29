@@ -169,7 +169,7 @@ $ sudo systemctl start grafana-server
 $ systemctl status grafana-server
 ```
 
-### Step 4: Step 5: Configure Grafana to visualize system logs
+### Step 5: Configure Grafana to visualize system logs
 
 1. Open Grafana in your browser at http://<your-server-ip>:3000 and log in with the default credentials (username: admin, password: admin).
 2. Click on the Configuration (gear icon) in the left sidebar, then Data sources, and click Add Data source.
