@@ -20,14 +20,14 @@ $ sudo apt upgrade
 Download and extract Node Exporter
 
 ```console
-$ wget https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-amd64.tar.gz
-$ tar xvzf node_exporter-1.6.0.linux-amd64.tar.gz
+$ wget https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+$ tar xvzf node_exporter-1.6.1.linux-amd64.tar.gz
 ```
 
 Copy the binary to /usr/local/bin/ and set permissions
 
 ```console
-$ sudo cp node_exporter-1.6.0.linux-amd64/node_exporter /usr/local/bin/
+$ sudo cp node_exporter-1.6.1.linux-amd64/node_exporter /usr/local/bin/
 $ sudo useradd --no-create-home --shell /bin/false node_exporter
 $ sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 ```
@@ -70,8 +70,8 @@ $ systemctl status node_exporter
 Download and extract Prometheus
 
 ```console
-$ wget https://github.com/prometheus/prometheus/releases/download/v2.44.0/prometheus-2.44.0.linux-amd64.tar.gz
-$ tar xvzf prometheus-2.44.0.linux-amd64.tar.gz
+$ wget https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz
+$ tar xvzf prometheus-2.45.0.linux-amd64.tar.gz
 ```
 
 Create necessary directories and copy files
@@ -82,11 +82,11 @@ $ sudo mkdir /etc/prometheus
 $ sudo mkdir /etc/prometheus/consoles
 $ sudo mkdir /etc/prometheus/console_libraries
 
-$ sudo cp prometheus-2.44.0.linux-amd64/prometheus /usr/local/bin/
-$ sudo cp prometheus-2.44.0.linux-amd64/promtool /usr/local/bin/
-$ sudo cp prometheus-2.44.0.linux-amd64/prometheus.yml /etc/prometheus/
-$ sudo cp -r prometheus-2.44.0.linux-amd64/consoles /etc/prometheus
-$ sudo cp -r prometheus-2.44.0.linux-amd64/console_libraries/ /etc/prometheus
+$ sudo cp prometheus-2.45.0.linux-amd64/prometheus /usr/local/bin/
+$ sudo cp prometheus-2.45.0.linux-amd64/promtool /usr/local/bin/
+$ sudo cp prometheus-2.45.0.linux-amd64/prometheus.yml /etc/prometheus/
+$ sudo cp -r prometheus-2.45.0.linux-amd64/consoles /etc/prometheus
+$ sudo cp -r prometheus-2.45.0.linux-amd64/console_libraries/ /etc/prometheus
 ```
 
 Create a Prometheus user and set permissions
@@ -161,8 +161,8 @@ $ sudo apt-get install -y adduser libfontconfig1
 Download and install Grafana
 
 ```console
-$ wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.5.2_amd64.deb
-$ sudo dpkg -i grafana-enterprise_9.5.2_amd64.deb
+$ wget https://dl.grafana.com/enterprise/release/grafana-enterprise_10.0.2_amd64.deb
+$ sudo dpkg -i grafana-enterprise_10.0.2_amd64.deb
 ```
 
 Enable and start Grafana
@@ -176,7 +176,7 @@ $ systemctl status grafana-server
 ### Step 5: Configure Grafana to visualize system logs
 
 1. Open Grafana in your browser at http://your-server-ip:3000 and log in with the default credentials (username: admin, password: admin).
-2. Click on the Configuration (gear icon) in the left sidebar, then Data sources, and click Add Data source.
+2. Click on the Connections in the left sidebar, then Data sources, and click Add Data source.
 3. Select Prometheus as the data source.
 4. Under HTTP, set the URL to http://localhost:9090.
 5. Click Save & test to save the configuration and test the connection.
