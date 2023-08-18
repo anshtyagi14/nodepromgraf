@@ -70,8 +70,8 @@ $ systemctl status node_exporter
 Download and extract Prometheus
 
 ```console
-$ wget https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz
-$ tar xvzf prometheus-2.45.0.linux-amd64.tar.gz
+$ wget https://github.com/prometheus/prometheus/releases/download/v2.46.0/prometheus-2.45.0.linux-amd64.tar.gz
+$ tar xvzf prometheus-2.46.0.linux-amd64.tar.gz
 ```
 
 Create necessary directories and copy files
@@ -82,11 +82,11 @@ $ sudo mkdir /etc/prometheus
 $ sudo mkdir /etc/prometheus/consoles
 $ sudo mkdir /etc/prometheus/console_libraries
 
-$ sudo cp prometheus-2.45.0.linux-amd64/prometheus /usr/local/bin/
-$ sudo cp prometheus-2.45.0.linux-amd64/promtool /usr/local/bin/
-$ sudo cp prometheus-2.45.0.linux-amd64/prometheus.yml /etc/prometheus/
-$ sudo cp -r prometheus-2.45.0.linux-amd64/consoles /etc/prometheus
-$ sudo cp -r prometheus-2.45.0.linux-amd64/console_libraries/ /etc/prometheus
+$ sudo cp prometheus-2.46.0.linux-amd64/prometheus /usr/local/bin/
+$ sudo cp prometheus-2.46.0.linux-amd64/promtool /usr/local/bin/
+$ sudo cp prometheus-2.46.0.linux-amd64/prometheus.yml /etc/prometheus/
+$ sudo cp -r prometheus-2.46.0.linux-amd64/consoles /etc/prometheus
+$ sudo cp -r prometheus-2.46.0.linux-amd64/console_libraries/ /etc/prometheus
 ```
 
 Create a Prometheus user and set permissions
@@ -161,8 +161,8 @@ $ sudo apt-get install -y adduser libfontconfig1
 Download and install Grafana
 
 ```console
-$ wget https://dl.grafana.com/enterprise/release/grafana-enterprise_10.0.2_amd64.deb
-$ sudo dpkg -i grafana-enterprise_10.0.2_amd64.deb
+$ wget https://dl.grafana.com/enterprise/release/grafana-enterprise_10.0.3_amd64.deb
+$ sudo dpkg -i grafana-enterprise_10.0.3_amd64.deb
 ```
 
 Enable and start Grafana
