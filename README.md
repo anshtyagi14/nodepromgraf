@@ -70,7 +70,7 @@ $ systemctl status node_exporter
 Download and extract Prometheus
 
 ```console
-$ wget https://github.com/prometheus/prometheus/releases/download/v2.46.0/prometheus-2.45.0.linux-amd64.tar.gz
+$ wget https://github.com/prometheus/prometheus/releases/download/v2.46.0/prometheus-2.46.0.linux-amd64.tar.gz
 $ tar xvzf prometheus-2.46.0.linux-amd64.tar.gz
 ```
 
