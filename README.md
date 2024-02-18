@@ -6,14 +6,16 @@ This guide will help you install and set up Node Exporter, Prometheus, and Grafa
 
 Linux-based operating system (Ubuntu, Debian, etc.)
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
-
 ## Initial setup
 
 ### Step 1: Update your system
+
+| For RabbitMQ < 3.8  | For RabbitMQ > 3.8 |
+| --- | --- |
+| ```console | Same |
+| $ sudo apt update |  |
+| $ sudo apt upgrade |  |
+| ``` |  |
 
 ```console
 $ sudo apt update
