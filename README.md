@@ -6,6 +6,11 @@ This guide will help you install and set up Node Exporter, Prometheus, and Grafa
 
 Linux-based operating system (Ubuntu, Debian, etc.)
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 ## Initial setup
 
 ### Step 1: Update your system
