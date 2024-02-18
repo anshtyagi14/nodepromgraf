@@ -10,13 +10,6 @@ Linux-based operating system (Ubuntu, Debian, etc.)
 
 ### Step 1: Update your system
 
-| For RabbitMQ < 3.8  | For RabbitMQ > 3.8 |
-| --- | --- |
-| ```console | Same |
-$ sudo apt update
-$ sudo apt upgrade
-``` |
-
 ```console
 $ sudo apt update
 $ sudo apt upgrade
